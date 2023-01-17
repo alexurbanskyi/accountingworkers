@@ -1,0 +1,19 @@
+.chair_list{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.chair_item{
+    width: 40%;
+    display: flex;
+    gap: 10px
+}
+.chair_barcode_icon{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+.chair_description{
+    font-size: 14px;
+    font-weight: 700;
+}
