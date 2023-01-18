@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { mokWarehouse } from "../mokData.js";
 import { AiOutlineBarcode } from "react-icons/ai";
 import { BsFillPersonPlusFill } from "react-icons/bs";
@@ -6,9 +6,27 @@ import { BsPersonDashFill } from "react-icons/bs";
 import "./Chair.css";
 
 function Chair() {
+  const [chairInfo, setChairInfo] = useState(null)
+  const [show, setShow] = useState(false)
+  
   const chairData = mokWarehouse.filter((item) => {
     return item.type === "chair";
   });
+  
+
+
+  function ModalScreen({show, setShow, chairInfo}){
+   console.log("chairInfo -->", chairInfo)
+
+    return(
+     <div className={show ? 'modal' : 'hiden'}>
+      <div>
+       {chairInfo.barCode}
+      </div>
+      <button onClick={() => setShow(false)}>CLOSE</button>
+     </div>
+    );
+  }
 
   console.log("CHAIR --->", chairData);
   return (
@@ -19,7 +37,11 @@ function Chair() {
             <div className="chair_icon">
               <AiOutlineBarcode />
             </div>
-            <div className="chair_description">
+            <div className="chair_description" 
+              onClick={() => {
+                setChairInfo(item)
+                setShow(true)
+              }}>
               {item.barCode}
             </div>
           </div>
@@ -38,6 +60,7 @@ function Chair() {
           </div>
         </div>
       ))}
+      <ModalScreen show={show} setShow={setShow} chairInfo={chairInfo}/>
     </div>
   );
 }

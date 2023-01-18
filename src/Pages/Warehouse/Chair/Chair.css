@@ -1,5 +1,5 @@
 .chair_list{
-    padding: 5px;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -16,4 +16,17 @@
 .chair_description{
     font-size: 14px;
     font-weight: 700;
+}
+/* MODAL */
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: antiquewhite;
+   
+}
+.hiden{
+    display: none;
 }

@@ -4,10 +4,15 @@ import "./Warehouse.css";
 import TopMenu from "./Components/TopMenu/TopMenu";
 
 function Warehouse() {
+
   return (
     <div className="warehouse">
       <TopMenu />
+      <div>
+        <button>add new element</button>
+      </div>
       <Outlet />
+    
     </div>
   );
 }
