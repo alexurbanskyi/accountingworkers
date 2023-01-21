@@ -1,0 +1,50 @@
+.worker-create-button {
+  margin: 3px;
+  padding: 5px 0px;
+  font-size: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgb(230, 163, 76);
+  border: 1px solid rgb(194, 117, 17);
+  cursor: pointer;
+  text-align: center;
+}
+.worker-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+}
+.worker-name {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.worker-items-holder {
+  flex-grow: 1;
+}
+.worker-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.worker-item-icon {
+  font-size: 30px;
+}
+.worker-item-barcode {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.worker-item-barcode-title {
+  font-weight: 700;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}

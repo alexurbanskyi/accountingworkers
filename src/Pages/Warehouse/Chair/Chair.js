@@ -8,6 +8,8 @@ import "./Chair.css";
 function Chair() {
   const [chairInfo, setChairInfo] = useState(null)
   const [show, setShow] = useState(false)
+
+  //console.log('mokWarehouse',mokWarehouse)
   
   const chairData = mokWarehouse.filter((item) => {
     return item.type === "chair";
@@ -16,19 +18,19 @@ function Chair() {
 
 
   function ModalScreen({show, setShow, chairInfo}){
-   console.log("chairInfo -->", chairInfo)
+   //console.log("chairInfo -->", chairInfo)
 
     return(
      <div className={show ? 'modal' : 'hiden'}>
       <div>
-       {chairInfo.barCode}
+       {chairInfo?.barCode}
       </div>
       <button onClick={() => setShow(false)}>CLOSE</button>
      </div>
     );
   }
 
-  console.log("CHAIR --->", chairData);
+  //console.log("CHAIR --->", chairData);
   return (
     <div className="chair">
       {chairData.map((item) => (
