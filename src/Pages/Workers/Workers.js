@@ -72,7 +72,60 @@ function Workers() {
             </div>
           </div>
         </div>
-        
+      </div>
+      <div className="worker-container">
+        <div className="worker-name">
+          <div className="worker-name-icon">
+            <BsPersonBoundingBox />
+          </div>
+          <div className="worker-name-title">Roman Shvec</div>
+        </div>
+        <div className="worker-items-holder">
+          <div className="worker-item">
+            <div className="worker-item-icon">
+              <GiOfficeChair />
+            </div>
+            <div className="worker-item-barcode">
+              <div className="worker-item-barcode-icon">
+                <AiOutlineBarcode />
+              </div>
+              <div className="worker-item-barcode-title">CH2022002</div>
+            </div>
+          </div>
+          <div className="worker-item">
+            <div className="worker-item-icon">
+              <AiOutlineLaptop />
+            </div>
+            <div className="worker-item-barcode">
+              <div className="worker-item-barcode-icon">
+                <AiOutlineBarcode />
+              </div>
+              <div className="worker-item-barcode-title">LT2022001</div>
+            </div>
+          </div>
+          <div className="worker-item">
+            <div className="worker-item-icon">
+              <FiMonitor />
+            </div>
+            <div className="worker-item-barcode">
+              <div className="worker-item-barcode-icon">
+                <AiOutlineBarcode />
+              </div>
+              <div className="worker-item-barcode-title">DT2022001</div>
+            </div>
+          </div>
+          <div className="worker-item">
+            <div className="worker-item-icon">
+              <GiDesk />
+            </div>
+            <div className="worker-item-barcode">
+              <div className="worker-item-barcode-icon">
+                <AiOutlineBarcode />
+              </div>
+              <div className="worker-item-barcode-title">MO2022001</div>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* <Button onPress={() => setShow(true)}>ADD NEW</Button> */}
