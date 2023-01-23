@@ -1,0 +1,12 @@
+.modal-screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: antiquewhite;
+   
+}
+.hiden-screen{
+    display: none;
+}
